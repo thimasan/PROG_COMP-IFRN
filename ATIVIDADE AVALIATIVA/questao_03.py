@@ -1,4 +1,4 @@
-#                           DESEMPENHO DA VIAGEM: TEMPO, RENDIMENTOS E CUSTOS
+#                           DESEMPENHO DA VIAGEM: TEMPO, RENDIMENTOS E CUSTOS.
 #************************************************************************************************************
 #                   AQUISIÇÃO DE DADOS
 
