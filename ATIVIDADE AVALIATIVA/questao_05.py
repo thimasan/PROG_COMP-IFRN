@@ -70,4 +70,5 @@ while intMes_Entrada > intMes_Saida and intAno_Entrada == intAno_Saida:
     intMes_Entrada = int(input('Digite o Mês de Entrada:'))
     intMes_Saida   = int(input('Digite o Mês de Saída:'))
 ################################################################################################################################################################################
+#                               CÁLCULO DA DIFERENÇA DE HORAS PARA MESMO DIA, MÊS E ANO
 

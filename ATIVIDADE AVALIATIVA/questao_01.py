@@ -1,3 +1,4 @@
+#           SOMATORIO DAS UNIDADES
 numero = int(input("Informe um número com no máximo 4 digitos: "))
 
 rest_val = numero // 10000
