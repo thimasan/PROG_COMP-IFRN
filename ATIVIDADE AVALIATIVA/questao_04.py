@@ -5,6 +5,7 @@ Exemplos:  o 02 de 05 até 03 de 05 - 1 dia o 27 de 04 até 03 de 05 - 6 dias o 
 Não esqueça de verificar se a data inicial é menor ou igual à data final. 
 Dica: conte o número de dias até cada uma das datas e subtraia esses números.
 '''
+print('*'*60)
 # ENTRADA DOS DADOS E VALIDAÇÃO SIMULTÂNEA A CADA ENTRADA:
 
 Dia_Inicial = int(input('Digite o dia inicial:'))
@@ -66,3 +67,5 @@ else:
         diferenca_mes = (Mes_Final - Mes_Inicial) * 30
         dias_total = diferenca_mes + (Dia_Final - Dia_Inicial) + 1
         print(f'Se passaram {dias_total} dias!')
+        
+print('*'*60)
