@@ -55,3 +55,19 @@ while intMinuto_Saida > 59:
 
 print('*'*100)
 
+##############################################################################################################################################################################
+#                                   VALIDAÇÕES LÓGICAS
+
+#VALIDAÇÃO DO ANO
+while intAno_Entrada > intAno_Saida:
+    print('O Ano de Entrada não pode ser maior que o Ano de Saída!')
+    intAno_Entrada = int(input('Digite o Ano de Entrada:'))
+    intAno_Saida   = int(input('Digite o Ano de Saída:'))
+
+#VALIDAÇÃO DOS MESES
+while intMes_Entrada > intMes_Saida and intAno_Entrada == intAno_Saida:
+    print('O Mês de Entrada não pode ser maior que o Mês de Saída!')
+    intMes_Entrada = int(input('Digite o Mês de Entrada:'))
+    intMes_Saida   = int(input('Digite o Mês de Saída:'))
+################################################################################################################################################################################
+
