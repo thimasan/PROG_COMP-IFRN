@@ -7,3 +7,29 @@ while strSexo.lower() not in ["masculino","feminino"]:
 
 data_nascimento = input('Informe sua data de nascimento (DD/MM/AAAA):')
 data_inic_contrib = input('Informe sua data de INICIO da contribuição Previdenciaria (DD/MM/AAAA):')
+
+
+#calculo_idade
+
+
+
+
+
+#calculo_tempo_contribuicao
+
+
+
+
+
+
+#               PROCESSAMENTO
+if strSexo == 'masculino':
+    if idade >= 65 and tempo_contribuicao >= 35:
+        print('Você já pode se aposentar!')
+    else:
+        print('Você ainda não pode se aposentar!')
+else:    
+    if idade >= 62 and tempo_contribuicao >= 30:
+        print('Você já pode se aposentar!')
+    else:
+        print('Você ainda não pode se aposentar!')
