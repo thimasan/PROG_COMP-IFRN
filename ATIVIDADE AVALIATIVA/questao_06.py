@@ -1,5 +1,6 @@
 from datetime import datetime
-from dateutil import parser, relativedelta
+from dateutil.parser import parse
+from dateutil.relativedelta import relativedelta
 #               AQUISIÇÃO DE DADOS
 
 strSexo = input('Informe seu Sexo (Masculino/Feminino):')
@@ -13,9 +14,9 @@ data_inic_contrib = input('Informe sua data de INICIO da contribuição Previden
 
 
 #calculo_idade
-data_nascimento = parser.parse(data_nascimento)
+data_nascimento = parse(data_nascimento)
 data_atual = datetime.now()
-idade = relativedelta.relativedelta(data_atual, data_nascimento).years
+idade = relativedelta(data_atual, data_nascimento).years
 
 print(f'Você tem {idade} anos de idade!')
 
