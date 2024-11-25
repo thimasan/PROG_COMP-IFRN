@@ -23,7 +23,10 @@ data_inic_contrib = parse(data_inic_contrib)
 data_atual = datetime.now()
 tempo_contribuicao = relativedelta(data_atual, data_inic_contrib).years
 
-
+'''
+APÓS A PROVA SER AVALIADA, REFAZER AS CONDIÇÕES ABAIXO TRANSFORMANDO EM FUNÇÕES! PARA EVITAR A REPETIÇÃO DA RESPOSTA AO USUÁRIO!
+E SOMENTE ENTRAR NA SEGUNDA CONDIÇÃO SE A PRIMEIRA FOR FALSA!
+'''
 #   APOSENTADORIA POR IDADE
 
 if strSexo == 'masculino':
