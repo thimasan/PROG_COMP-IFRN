@@ -19,16 +19,15 @@ data_atual = datetime.now()
 idade = relativedelta(data_atual, data_nascimento).years
 
 # IDADE DE TRABALHO
-data_nascimento = parse(data_nascimento)
 data_inic_contrib = parse(data_inic_contrib)
 idade_trabalho = relativedelta(data_inic_contrib, data_nascimento).years
 
 if idade_trabalho < 18:
     print('Você não pode contribuir com a previdência com menos de 18 anos!')
     print(f'Você tem {idade_trabalho} anos de idade!')
+    exit()
 
 # CALCULO TEMPO DE CONTRIBUIÇÃO
-data_inic_contrib = parse(data_inic_contrib)
 data_atual = datetime.now()
 tempo_contribuicao = relativedelta(data_atual, data_inic_contrib).years
 
@@ -40,14 +39,15 @@ tempo_contribuicao = relativedelta(data_atual, data_inic_contrib).years
 
 if strSexo == 'masculino':
     if idade >= 65 and tempo_contribuicao >= 15:
-        print('Você já pode se aposentar!')
+        print('Você já pode se aposentar por idade!')
     else:
-        print('Você ainda não pode se aposentar!')
+        print('Você ainda não pode se aposentar por idade!')
+        print(f'Você tem {idade} anos de idade!')
 else:    
     if idade >= 62 and tempo_contribuicao >= 15:
-        print('Você já pode se aposentar!')
+        print('Você já pode se aposentar idade!')
     else:
-        print('Você ainda não pode se aposentar!')
+        print('Você ainda não pode se aposentar por idade!')
         print(f'Você tem {idade} anos de idade!')
 
 # APOSENTADORIA POR TEMPO DE CONTRIBUIÇÃO
