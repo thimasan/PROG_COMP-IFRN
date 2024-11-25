@@ -18,15 +18,24 @@ data_nascimento = parse(data_nascimento)
 data_atual = datetime.now()
 idade = relativedelta(data_atual, data_nascimento).years
 
+# IDADE DE TRABALHO
+data_nascimento = parse(data_nascimento)
+data_inic_contrib = parse(data_inic_contrib)
+idade_trabalho = relativedelta(data_inic_contrib, data_nascimento).years
+
+if idade_trabalho < 18:
+    print('Você não pode contribuir com a previdência com menos de 18 anos!')
+    print(f'Você tem {idade_trabalho} anos de idade!')
+
 # CALCULO TEMPO DE CONTRIBUIÇÃO
 data_inic_contrib = parse(data_inic_contrib)
 data_atual = datetime.now()
 tempo_contribuicao = relativedelta(data_atual, data_inic_contrib).years
 
-'''
-APÓS A PROVA SER AVALIADA, REFAZER AS CONDIÇÕES ABAIXO TRANSFORMANDO EM FUNÇÕES! PARA EVITAR A REPETIÇÃO DA RESPOSTA AO USUÁRIO!
-E SOMENTE ENTRAR NA SEGUNDA CONDIÇÃO SE A PRIMEIRA FOR FALSA!
-'''
+
+# APÓS A PROVA SER AVALIADA, REFAZER AS CONDIÇÕES ABAIXO TRANSFORMANDO EM FUNÇÕES! PARA EVITAR A REPETIÇÃO DA RESPOSTA AO USUÁRIO!
+# E SOMENTE ENTRAR NA SEGUNDA CONDIÇÃO SE A PRIMEIRA FOR FALSA!
+
 #   APOSENTADORIA POR IDADE
 
 if strSexo == 'masculino':
