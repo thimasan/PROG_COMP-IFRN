@@ -5,7 +5,9 @@ numero = int(input("Digite um número qualquer : "))
 
 soma = 0
 contador = 0
-while numero != 0:
+while true:
+    if numero == 0:
+        break
     soma += numero
     contador += 1
     numero = int(input("Digite um número qualquer : "))
