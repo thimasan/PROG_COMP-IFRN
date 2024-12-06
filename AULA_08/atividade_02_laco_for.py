@@ -4,11 +4,9 @@
 '''
 numero = int(input("Digite um número inteiro positivo: "))
 
-for i in range (1, numero + 1):
-    for j in range (1, numero + 1):
-        for k in range (1, numero + 1):
-            if i**2 == j**2 + k**2:
-                print(f'{i} {j} {k}')
-                break
-            if i**2 < j**2 + k**2:
+for c in range (1, numero + 1):
+    for b in range (1, c + 1):
+        for a in range (1, b + 1):
+            if c**2 == b**2 + a**2:
+                print(f'{c} {b} {a}')
                 break
