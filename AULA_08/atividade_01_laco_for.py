@@ -10,7 +10,10 @@
    3 3 3
    4 4 4 4
 '''
+import sys
 numero = int(input("Digite um número inteiro positivo: "))
 
-for i in range (numero + 1):
+if numero <= 0:
+    sys.exit("Número inválido!")
+for i in range (1, numero + 1):
     print(f'{i} ' * i)
