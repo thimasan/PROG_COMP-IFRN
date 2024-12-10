@@ -15,6 +15,6 @@ intQtVogais = 0
 # Percorre cada caractere da frase digitada
 
 for caractere in frase:
-    if caractere.lower() in 'aeiouãõáéíóúâêîôûàèìòùäëïöü'
+    if caractere.lower() in 'aeiouãõáéíóúâêîôûàèìòùäëïöü':
         intQtVogais += 1
     
