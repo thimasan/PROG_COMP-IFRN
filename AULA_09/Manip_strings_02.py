@@ -17,4 +17,5 @@ intQtVogais = 0
 for caractere in frase:
     if caractere.lower() in 'aeiouãõáéíóúâêîôûàèìòùäëïöü':
         intQtVogais += 1
-    
+
+print(f'Existem {intQtVogais} vogais na string digitada!')
