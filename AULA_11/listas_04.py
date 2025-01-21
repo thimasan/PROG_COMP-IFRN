@@ -50,4 +50,8 @@ while True:
 
 # Exbindo os dados dos alunos
 for aluno in lstAlunos:
-   print(aluno)
+   print(f'Aluno: {aluno[0]}')
+   print(f'Nota 1: {aluno[0]}')
+   print(f'Nota 2: {aluno[0]}')
+   print(f'Média: {aluno[0]}')
+   print(f'Situação: {aluno[0]}')
