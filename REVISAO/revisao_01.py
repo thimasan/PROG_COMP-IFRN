@@ -20,3 +20,14 @@
    e em seguida escreva o resultado em um arquivo chamado 'fibonacci.csv' escrevendo os 
    elementos da lista de Fibonacci em uma linha apenas, separando cada um deles por ;. 
 '''
+n = int(input('Digite o valor de n: '))
+   
+#a, b = 1, 1
+a = 1
+b = 1  
+lstFibonacci = list()
+for _ in range(n):
+  lstFibonacci.append(a)
+  a, b = b, a + b
+
+print(lstFibonacci)
