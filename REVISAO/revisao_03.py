@@ -10,11 +10,11 @@
    O arquivo 'valores_saida.txt' deve conter em cada linha o valor lido e seu fatorial separados por ;
 '''
 
-#LEITURA DO ARQUIVO 'valores_entrada.txt'
+#GERANDO O ARQUIVO 'valores_entrada.txt'
 with open('valores_entrada.txt', 'w') as valores:
     valores.write('2 3 4 5 6 7 8 9 10 11')
     valores.close()
-
+#LENDO O ARQUIVO 'valores_entrada.txt'
 lstValores = list()
 with open('valores_entrada.txt', 'r') as valores:
       lstValores = valores.read().split()
