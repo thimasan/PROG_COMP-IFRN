@@ -34,3 +34,8 @@ while matricula != '0':
     matricula = input('Digite a matrícula do aluno: ')
 
 print(dictAlunos)
+
+
+### refazer o código baseado no de Charles, separar a obtenção das duas notas em dois laços de while independentes
+### caso umas das notas não seja válida o programa deve solicitar a nota novamente sem precisar redigitar a nota anterior que esteja correta
+### tratamneto das condições no final do código.
