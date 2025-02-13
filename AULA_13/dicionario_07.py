@@ -19,14 +19,14 @@
 dictAlunos = dict()
 
 matricula = input('Digite a matrícula do aluno: ')
-if matricula in dictAlunos:
+if matricula in dictAlunos.keys():  #verificar se está nas chaves do dicionário
     print('Matrícula já existe!')
     print(dictAlunos[matricula])
 else:
     nota1 = float(input('Digite a primeira nota: '))
     nota2 = float(input('Digite a segunda nota: '))
     dictAlunos[matricula] = [nota1, nota2]
-    
+
 while matricula != '0':
     nota1 = float(input('Digite a primeira nota: '))
     nota2 = float(input('Digite a segunda nota: '))
