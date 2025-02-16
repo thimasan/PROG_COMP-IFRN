@@ -20,9 +20,8 @@
    e em seguida escreva o resultado em um arquivo chamado 'fibonacci.csv' escrevendo os 
    elementos da lista de Fibonacci em uma linha apenas, separando cada um deles por ;. 
 '''
-#GERANDO A LISTA DE FIBONACCI COM LIST COMPREHENSION
 n = int(input('Digite o valor de n: '))
-'''   
+   
 #a, b = 1, 1
 a = 1
 b = 1  
@@ -32,12 +31,5 @@ for _ in range(n):
   a, b = b, a + b
 
 print(lstFibonacci)
-'''
-#ESCREVENDO O RESULTADO EM UM ARQUIVO CHAMADO 'fibonacci.csv'
-lstFibonacci = list()
 
-lstFibonacci = [1 if i == 0 else 1 if i == 1 else lstFibonacci[i-1] + lstFibonacci[i-2] for i in range(n)]
-with open('fibonacci.csv', 'w') as fibo:
-      fibo.write(';'.join(map(str, lstFibonacci)))
-      fibo.close()
-    
+arquivo = open('fibonacci.csv', 'w')
